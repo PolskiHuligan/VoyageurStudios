@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Voyageur Studios | DOJ:RP Sandy Shores</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'vs-black': '#121212',
+                        'vs-gray': '#1E1E1E',
+                        'vs-purple': '#6A5ACD',
+                        'vs-light-purple': '#8A7FD4'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body class="bg-vs-black text-white">
+    <!-- Navigation - DAWID FIX THE DAMN MENU -->
+    <nav class="fixed top-0 left-0 w-full bg-vs-gray/90 backdrop-blur-md z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="Media/VSLogo.PNG" alt="Voyageur Studios Logo" class="w-12 h-12 mr-4">
+                <h1 class="text-2xl font-bold text-white">VOYAGEUR STUDIOS [VS]</h1>
+            </div>
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="text-vs-light-purple hover:text-white transition">Home</a></li>
+                <li><a href="game.html" class="text-vs-light-purple hover:text-white transition">Game</a></li>
+                <li><a href="servers.html" class="text-vs-light-purple hover:text-white transition">Servers</a></li>
+                <li><a href="community.html" class="text-white bg-vs-purple px-4 py-2 rounded-full hover:bg-opacity-80 transition">Join</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Page Content -->
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="min-h-screen flex items-center bg-vs-gray">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-5xl font-bold mb-6 text-vs-light-purple">DOJ:RP Sandy Shores</h2>
+                <p class="text-xl mb-8 max-w-2xl mx-auto text-gray-300">The most immersive roleplay experiencd in the Department of Justice universe. Live your story, your way.</p>
+                <div class="flex justify-center space-x-4">
+                    <a href="game.html" class="bg-vs-purple text-white px-6 py-3 rounded-full hover:bg-opacity-90 transition">Learn More</a>
+                    <a href="community.html" class="border border-vs-light-purple text-vs-light-purple px-6 py-3 rounded-full hover:bg-vs-purple/20 transition">Join Community</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Preview -->
+        <section class="py-20 bg-black">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="stagger-item hover-grow">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4 text-vs-light-purple">Realistic Gameplay</h3>
+                        <p class="text-gray-300">Authentic law enforcement and civilian interactions in a decently detailed map</p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4 text-vs-light-purple">Custom Mechanics</h3>
+                        <p class="text-gray-300">Unique systems that enhance immersion and player agency.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4 text-vs-light-purple">Active Community</h3>
+                        <p class="text-gray-300">Dedicated roleplayers frequently creating realistic scenes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-vs-gray py-8">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="https://discord.gg/d6Jv9JKRPr" class="text-vs-light-purple hover:text-white">Discord</a>
+                <a href="https://www.roblox.com/communities/16536972/VoyageurStudios#!/about" class="text-vs-light-purple hover:text-white">Roblox</a>
+                <a href="#" class="text-vs-light-purple hover:text-white">Twitter</a>
+            </div>
+            <p class="text-gray-400">&copy; 2024 Voyageur Studios. DOJ:RP Sandy Shores</p>
+        </div>
+    </footer>
+</body>
+</html>
